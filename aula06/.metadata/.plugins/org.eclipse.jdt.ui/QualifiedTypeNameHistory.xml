@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.springframework.jdbc.core.RowMapper"/>
+<fullyQualifiedTypeName name="br.com.fiap.model.ProdutoModel"/>
+<fullyQualifiedTypeName name="br.com.fiap.model.CategoriaModel"/>
+<fullyQualifiedTypeName name="br.com.fiap.repository.rowmapper.ProdutoRowMapper"/>
+</qualifiedTypeNameHistroy>

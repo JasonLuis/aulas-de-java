@@ -1,0 +1,15 @@
+INDEX VERSION 1.131
+C:\Users\User\Desktop\aulas_de_Java\aula07\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3042428272.index
+\produtos-boot\src\main\java
+C:\Users\User\Desktop\FIAP 2020\aulas_de_Java\aula07\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3463154522.index
+\produtos-boot\src\main\java
+C:\Users\User\Desktop\aulas_de_Java\aula07\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4293206131.index
+\produtos-mvc\src\main\java
+C:\Users\User\Desktop\aulas_de_Java\aula07\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3463154522.index
+\produtos-boot\src\main\java
+C:\Users\User\Desktop\aulas_de_Java\aula07\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1405944911.index
+\produtos-mvc\src\main\java
+C:\Users\User\Desktop\FIAP 2020\aulas_de_Java\aula07\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3042428272.index
+\produtos-boot\src\main\java
+C:\Users\User\Desktop\aulas_de_Java\aula07\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\390545136.index
+\produtos-mvc\src\main\java

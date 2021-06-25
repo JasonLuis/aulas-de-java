@@ -1,0 +1,9 @@
+package br.com.fiap.repository.rowmapper;
+
+import org.springframework.jdbc.core.RowMapper;
+
+public class ProdutoRowMapper implements RowMapper<ProdutoModel>{
+	
+	
+	
+}

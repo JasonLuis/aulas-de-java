@@ -1,0 +1,30 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Lista de Bots</title>
+    <c:set value="${pageContext.request.contextPath}" var="contextPath"/>
+    <link rel="stylesheet" href="${contextPath}/css/style.css">
+</head>
+<body>
+	<header class="cabecalho">
+		<div class="cabecalho-menu">
+			<a href="#"><img class="logo-principal"
+				src="${contextPath}/fonts/download.jfif"></a>
+			<nav class="navegacao">
+				<ul>
+					<a href="${contextPath}/chatbot"><li>Home</li></a>
+					<a href="${contextPath}/chatbot/form?page=chatbot-novo"><li>Chatbot</li></a>
+					<a href="${contextPath}/segmento"><li>Segmentos</li></a>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	
+	<main class="conteudo-principal">
+		<h1>${chatbot.name}</h1>
+	</main>
+</body>
+</html>

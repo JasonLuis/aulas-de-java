@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ExceptionHandler"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+<fullyQualifiedTypeName name="br.com.fiap.repository.LojaRepository"/>
+<fullyQualifiedTypeName name="br.com.fiap.model.LojaModel"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
+<fullyQualifiedTypeName name="org.springframework.boot.actuate.liquibase.LiquibaseEndpoint.ChangeSet"/>
+<fullyQualifiedTypeName name="br.com.fiap.exception.ResponseBusinessException"/>
+<fullyQualifiedTypeName name="br.com.fiap.business.LojaBusiness"/>
+<fullyQualifiedTypeName name="ch.qos.logback.core.boolex.Matcher"/>
+<fullyQualifiedTypeName name="java.util.regex.Matcher"/>
+<fullyQualifiedTypeName name="java.util.regex.Pattern"/>
+</qualifiedTypeNameHistroy>

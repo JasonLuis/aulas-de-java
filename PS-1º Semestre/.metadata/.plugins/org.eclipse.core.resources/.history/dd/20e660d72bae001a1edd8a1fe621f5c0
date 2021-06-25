@@ -1,0 +1,14 @@
+package br.com.fiap.repository;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class SegmentoRepository {
+	
+	private static String FIND_ALL = "SELECT * FROM TB_SEGMENT";
+	private static String FIND_BY_ID = "SELECT * FROM TB_SEGMENT WHERE ID_SEGMENT = ?";
+	private static String INSERT =  "INSERT INTO TB_BOT(id_bot,name,welcome_msg,farewell_msg,downtime,default_answer) VALUES(tb_seg_id.nextval, ?, ?,?,?,?)";
+	private static String DELETE = "DELETE FROM TB_BOT WHERE id_bot=?";
+	private static String UPDATE = "UPDATE TB_BOT SET name=?,welcome_msg=?,farewell_msg=?,downtime=?,default_answer=? WHERE id_bot = ?";
+	
+}

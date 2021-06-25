@@ -1,0 +1,23 @@
+package br.com.fiap.repository;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class TriggerClass {
+	
+	@Autowired
+	public JdbcTemplate jdbcTemplate;
+	
+	public TriggerClass() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+	
+	public void update(CategoriaModel categoriaModel) {
+		this.jdbcTemplate.update(UPDATE, 
+				categoriaModel.getNomeCategoria(),
+				categoriaModel.getIdCategoria());
+	}
+	
+}

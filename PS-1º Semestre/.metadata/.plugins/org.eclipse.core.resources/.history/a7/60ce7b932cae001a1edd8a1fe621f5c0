@@ -1,0 +1,9 @@
+package br.com.fiap.repository.mapper;
+
+import org.springframework.jdbc.core.RowMapper;
+
+import br.com.fiap.model.SegmentoModel;
+
+public class SegmentoRowMapper RowMapper<SegmentoModel>{
+
+}

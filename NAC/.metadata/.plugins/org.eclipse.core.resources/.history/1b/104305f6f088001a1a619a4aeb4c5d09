@@ -1,0 +1,38 @@
+package br.com.fiap.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+import br.com.fiap.model.LivroModel;
+import br.com.fiap.repository.LivroRepository;
+
+
+@Controller
+@RequestMapping("/livro")
+public class LivroController {
+	
+	LivroRepository repository = LivroRepository.getInstance();
+	
+	@GetMapping("/form")
+	public String open(@RequestParam String page,
+					   @RequestParam(required = false) Long id,
+					   @ModelAttribute("livroModel") LivroModel livroModel,
+					   Model model) {
+		if("new-livros".equals(page)){
+			model.addAttribute("livroModel",repository.findById(id));
+		}
+		
+		return page;
+	}
+	
+	@GetMapping()
+	public String findAll(Model model) {
+		model.addAttribute("livros", repository.findAll());
+		return "livros";
+	}
+	
+}

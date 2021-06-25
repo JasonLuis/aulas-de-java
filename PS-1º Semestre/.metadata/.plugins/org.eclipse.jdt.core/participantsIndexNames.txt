@@ -1,0 +1,15 @@
+INDEX VERSION 1.131
+C:\Users\User\Desktop\FIAP 2020\aulas_de_Java\PS-1º Semestre\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2458791254.index
+\produtos-boot-ps\src\main\java
+C:\Users\User\Desktop\FIAP 2020\aulas_de_Java\PS-1º Semestre\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\664398073.index
+\chatbot-boot\src\main\java
+C:\Users\User\Desktop\FIAP 2020\aulas_de_Java\PS-1º Semestre\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3042428272.index
+\produtos-boot\src\main\java
+C:\Users\User\Desktop\FIAP 2020\aulas_de_Java\PS-1º Semestre\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3463154522.index
+\produtos-boot\src\main\java
+C:\Users\User\Desktop\FIAP 2020\aulas_de_Java\PS-1º Semestre\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4053357727.index
+\chatbot-boot\src\main\java
+C:\Users\User\Desktop\FIAP 2020\aulas_de_Java\PS-1º Semestre\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\94106944.index
+\chatbot-boot\src\main\java
+C:\Users\User\Desktop\FIAP 2020\aulas_de_Java\PS-1º Semestre\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\643289156.index
+\produtos-boot-ps\src\main\java

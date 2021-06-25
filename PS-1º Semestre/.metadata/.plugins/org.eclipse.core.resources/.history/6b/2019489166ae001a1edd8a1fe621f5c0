@@ -1,0 +1,1 @@
+INSERT INTO TB_BOT(id_bot,name,welcome_msg,farewell_msg,downtime,default_answer) VALUES(30,'TheGoodBot','Bem vindo!','Até Mais',1,'Desculpe, mas não entendi');

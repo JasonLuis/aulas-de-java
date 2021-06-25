@@ -1,0 +1,20 @@
+package br.com.fiap.repository.rowmapper;
+
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import org.springframework.jdbc.core.RowMapper;
+
+import br.com.fiap.model.ProdutoModel;
+
+public class ProdutoRowMapper implements RowMapper<ProdutoModel>{
+
+	@Override
+	public ProdutoModel mapRow(ResultSet rs, int rowNum) throws SQLException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	
+	
+}

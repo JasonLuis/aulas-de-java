@@ -1,0 +1,21 @@
+package br.com.fiap.repository.mapper;
+
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import org.springframework.jdbc.core.BeanPropertyRowMapper;
+import org.springframework.jdbc.core.RowMapper;
+
+import br.com.fiap.model.ChatbotModel;
+
+public class ChatbotRowMapper implements RowMapper<ChatbotModel>{
+
+	@Override
+	public ChatbotModel mapRow(ResultSet rs, int rowNum) throws SQLException {
+		// TODO Auto-generated method stub
+		ChatbotModel chatbot = new BeanPropertyRowMapper<>(ChatbotModel.class).mapRow(rs, rowNum);
+		
+		return chatbot;
+	}
+	
+}

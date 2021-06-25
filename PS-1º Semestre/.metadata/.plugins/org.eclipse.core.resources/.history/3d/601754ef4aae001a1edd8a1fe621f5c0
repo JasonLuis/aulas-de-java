@@ -1,0 +1,92 @@
+package br.com.fiap.controller;
+
+
+import javax.validation.Valid;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
+
+import br.com.fiap.model.ChatbotModel;
+import br.com.fiap.model.SegmentoModel;
+import br.com.fiap.repository.ChatbotRepository;
+import br.com.fiap.repository.SegmentoRepository;
+
+@Controller
+@RequestMapping("/chatbot")
+public class ChatbotController {
+	
+	private static final String CHATBOT_FOLDER = "chatbot/";
+	
+	@Autowired
+	public ChatbotRepository chatbotRepository;
+	
+	@Autowired
+	public SegmentoRepository segmentoRepository;
+	
+	@GetMapping("/form")
+	public String open(@RequestParam String page, 
+					   @RequestParam(required = false) Long id,
+					   @ModelAttribute("chatbotModel") ChatbotModel chatbotModel, 
+					   Model model) {
+		
+		if("chatbot-editar".equals(page)) {
+			model.addAttribute("chatbotModel", chatbotRepository.findById(id));
+		}
+		
+		model.addAttribute("segmentos", segmentoRepository.findAll());
+		
+		return CHATBOT_FOLDER + page;
+	}
+	
+	@GetMapping()
+	public String findAll(Model model) {
+		model.addAttribute("chatbots", chatbotRepository.findAll());
+		return CHATBOT_FOLDER +  "chatbots";
+	}
+	
+	@PostMapping()
+	public String save(@Valid ChatbotModel chatbotModel, BindingResult bindingResult, RedirectAttributes redirectAttributes, Model model) {
+		
+		if(bindingResult.hasErrors()) {
+			model.addAttribute("segmentos",segmentoRepository.findAll());
+			return CHATBOT_FOLDER + "chatbot-novo";
+		}
+		
+		chatbotRepository.cadastrar(chatbotModel);
+		ChatbotModel chatbot = chatbotRepository.theLastSave();
+		
+		for(SegmentoModel segmento: chatbotModel.getSegmentos()) {
+			
+		}
+		redirectAttributes.addFlashAttribute("messages", "Categoria cadastrada com sucesso!");
+		
+		return "redirect:/chatbot";
+	}
+	
+	@PutMapping("/{id}")
+	public String editar(@PathVariable("id") long id,@Valid ChatbotModel chatbotModel,BindingResult bindingResult, RedirectAttributes redirectAttributes){
+		
+		chatbotModel.setId_bot(id);
+		chatbotRepository.editar(chatbotModel);
+		redirectAttributes.addFlashAttribute("messages", "Edição realizada com sucesso!");
+		return "redirect:/chatbot";
+	}
+	
+	@DeleteMapping("/{id}")
+	public String deleteId(@PathVariable("id") long id, RedirectAttributes redirectAttributes){
+		chatbotRepository.deletar(id);
+		redirectAttributes.addFlashAttribute("messages", "Bot excluido com sucesso!");
+		return "redirect:/chatbot";
+	}
+}

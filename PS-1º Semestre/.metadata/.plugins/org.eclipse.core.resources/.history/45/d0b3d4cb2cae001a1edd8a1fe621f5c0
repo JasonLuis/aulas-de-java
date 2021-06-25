@@ -1,0 +1,23 @@
+package br.com.fiap.repository.mapper;
+
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import org.springframework.jdbc.core.BeanPropertyRowMapper;
+import org.springframework.jdbc.core.RowMapper;
+
+import br.com.fiap.model.SegmentoModel;
+
+public class SegmentoRowMapper implements RowMapper<SegmentoModel>{
+
+	@Override
+	public SegmentoModel mapRow(ResultSet rs, int rowNum) throws SQLException {
+		// TODO Auto-generated method stub
+		
+		SegmentoModel segmentoModel = new BeanPropertyRowMapper<>(SegmentoModel.class).mapRow(rs, rowNum);
+		
+		return null;
+	}
+	
+	
+}

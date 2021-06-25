@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+}
+
+body{
+	background:#F1f4f2;
+	font-weight: bold;
+}
+a{
+	text-decoration: none;	
+}
+
+ul{
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+
+.logo-principal{
+	width: 110px;
+	height: 110px;
+	border:solid #fff 3px;
+	border-radius: 100%;
+	margin: 5px 0;
+}
+
+
+.cabecalho{
+	background: #1995ad;
+}
+.cabecalho-menu{
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row; 
+	justify-content: space-between;	
+	align-items: center; 
+}
+
+.cabecalho-menu a{
+	width: 40%;
+}
+.navegacao{
+	width: 60%;
+	text-align: center;
+}
+.navegacao ul li{
+	display: inline;
+	margin-right: 100px;
+	color: #fff;
+	font-size: 22px;
+	font-weight: bold;
+}
+.conteudo-principal{
+	height: 100%;
+}
+
+.conteudo-principal .form-lista{
+	width: 100%;
+	margin: 0px auto;
+	color: #000;
+	margin-top: 20px;
+}
+
+.conteudo-principal .form-insert{
+	width: 50%;
+	margin: 0px auto;
+	color: #000;
+	margin-top: 20px;
+}
+
+.conteudo-principal form h2{	
+	margin-bottom: 10px;
+}
+
+.conteudo-principal form hr{
+	margin-bottom: 20px;
+}
+
+.conteudo-pricipal form label{
+	display: block;
+	font-size: 1.3em;
+	padding: 2em 0;
+}
+
+.conteudo-principal form input {
+	display: block;
+	padding: 0.5em;
+	width: 95%;
+	height: 40px;
+	margin: 1em 0em;
+	border: solid 0px;
+	border-radius: 10px;
+	color: black;
+	font-weight: 700;
+}
+/*********style do select***********/
+.custom-select {
+  position: relative;
+  font-family: Arial;
+}
+
+.custom-select select {
+   /*hide original SELECT element: */
+}
+
+.select-selected {
+  background-color: DodgerBlue;
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,.select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
+
+/* Style items (options): */
+.select-items {
+  position: absolute;
+  background-color: DodgerBlue;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/*******************************************/
+
+.botao-gravar{
+	font-size: 1.2em;
+	margin: 1.5em 0;
+	padding: 0.3em 1.2em;
+	border: 1px solid #555;
+	border-radius: 5px;
+	background-color: #3C879E;
+	font-weight: bold;
+	color: white;
+}
+
+.botao-gravar:hover{
+	font-size: 1.22em;
+}
+
+
+.lista-bot{
+	width: 940px;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+
+.lista-bot li{
+	width: 30%;
+	margin: 1.5% 1.5%;
+	border: 2px solid #000;
+	border-radius: 5px;
+	padding: 20px 0;
+	text-align: center;
+	display: inline-block;
+}
+.lista-bot li:hover p{
+	font-size:1.2em; 
+}
+.lista-bot li img{
+	height: 140px;
+	width: 140px;
+}
+.lista-bot li p{
+	color: #000;
+	font-weight: bold;
+	margin: 10px 0;
+}
+.form-lista{
+	margin-top: 2em;
+}
+.lista-bot li button{
+	padding: 5px;
+	font-weight: bold; 
+	margin-right: 5px;
+}
+.botao-detalhes{
+	border-color: #12EB23;
+	color: #12EB23;
+	border-radius: 5px;
+	border:solid 2px;
+}
+.botao-detalhes:hover{
+	background-color:#12EB23;
+	color: #fff;
+}
+
+.botao-editar{
+	border:solid 2px;
+	border-color:#EBE300;
+	color: #EBE300;
+	border-radius: 5px;
+	
+}
+.botao-editar:hover{
+	background-color:#EBE300;
+	color: #fff; 
+}
+.botao-excluir{
+	border-color:#F01B10;
+	color: #F01B10;
+	border-radius: 5px;
+	border:solid 2px;
+}
+.botao-excluir:hover{
+	background-color:#F01B10;
+	color: #fff;
+	 
+}

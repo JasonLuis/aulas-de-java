@@ -1,0 +1,25 @@
+package br.com.fiap.model;
+
+public class LivroModel {
+	
+	private long id;
+	private String titulo;
+	private String nomeAutor;
+	private String data;
+	private double preco;
+	private String genero;
+	private String descrição;
+	
+	public LivroModel(long id, String titulo, String nomeAutor, String data, double preco, String genero,
+			String descrição) {
+		this.id = id;
+		this.titulo = titulo;
+		this.nomeAutor = nomeAutor;
+		this.data = data;
+		this.preco = preco;
+		this.genero = genero;
+		this.descrição = descrição;
+	}
+	
+	
+}

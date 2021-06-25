@@ -1,0 +1,8 @@
+INDEX VERSION 1.4+C:\Users\User\Desktop\aulas_de_Java\NAC\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+1939930267.index
+3545262021.index
+4233996004.index
+2295672327.index
+1262871283.index
+1005428933.index
+1948012167.index

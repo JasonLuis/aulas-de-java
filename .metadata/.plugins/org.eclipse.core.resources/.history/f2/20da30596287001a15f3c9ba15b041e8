@@ -1,0 +1,14 @@
+package br.com.fiap.repository;
+
+import java.util.Map;
+
+import br.com.fiap.model.LivroModel;
+
+public class LivroRepository {
+	
+	private static  LivroRepository instance;
+	private static Map<Long, LivroModel> livros;
+	
+	
+	
+}

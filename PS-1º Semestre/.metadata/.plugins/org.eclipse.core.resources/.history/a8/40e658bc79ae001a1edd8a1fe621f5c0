@@ -1,0 +1,4 @@
+INSERT INTO TB_SEGMENT(id_segment,name) VALUES(SEGMENT_SEQ.NEXTVAL,'Psicologia'); 
+INSERT INTO TB_SEGMENT(id_segment,name) VALUES(SEGMENT_SEQ.NEXTVAL,'Esportes'); 
+
+INSERT INTO TB_BOT(id_bot,name,welcome_msg,farewell_msg,downtime,default_answer) VALUES(CHATBOT_SEQ.nextval,'TheGoodBot','Bem vindo!','Até Mais',1,'Desculpe, mas não entendi');

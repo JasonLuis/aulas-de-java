@@ -1,0 +1,13 @@
+package br.com.fiap.model;
+
+public class SegmentoModel {
+	
+	private long id;
+	private String name;
+	private ChatbotModel chatbotModel;
+	
+	public SegmentoModel() {
+		// TODO Auto-generated constructor stub
+	}
+	
+}

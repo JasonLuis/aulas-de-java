@@ -1,0 +1,27 @@
+package br.com.fiap.repository;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Component;
+
+import br.com.fiap.model.SegmentoModel;
+
+@Component
+public class TriggerClass {
+	
+	@Autowired
+	public JdbcTemplate jdbcTemplate;
+	
+	public TriggerClass() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+	
+	public void update(SegmentoModel segmento) {
+		this.jdbcTemplate.update(UPDATE, 
+				categoriaModel.getNomeCategoria(),
+				categoriaModel.getIdCategoria());
+	}
+	
+}

@@ -1,0 +1,44 @@
+package br.com.fiap.model;
+
+public class SegmentoModel {
+	
+	private long id_segment;
+	private String name;
+	private ChatbotModel chatbotModel;
+	
+	public SegmentoModel() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public SegmentoModel(long id_segment, String name, ChatbotModel chatbotModel) {
+		super();
+		this.id_segment = id_segment;
+		this.name = name;
+		this.chatbotModel = chatbotModel;
+	}
+
+	public long getIdSegment() {
+		return id_segment;
+	}
+
+	public void setIdSegment(long id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public ChatbotModel getChatbotModel() {
+		return chatbotModel;
+	}
+
+	public void setChatbotModel(ChatbotModel chatbotModel) {
+		this.chatbotModel = chatbotModel;
+	}
+	
+}

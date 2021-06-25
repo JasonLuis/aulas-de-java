@@ -1,0 +1,6 @@
+package br.com.fiap.repository;
+
+@Component
+public class TriggerClass {
+
+}

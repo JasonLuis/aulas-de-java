@@ -1,0 +1,2 @@
+INSERT INTO TB_SEGMENT(id_segment,name) VALUES(SEGMENT_SEQ.NEXTVAL,'Psicologia'); 
+INSERT INTO TB_SEGMENT(id_segment,name) VALUES(SEGMENT_SEQ.NEXTVAL,'Esportes'); 

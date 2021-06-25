@@ -1,0 +1,49 @@
+<button (click)="open(content)" class="btn btn-outline-success">Cadastrar</button>
+<ng-template #content let-c="close" let-d="dismiss">
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Cadastrar</h4>
+    <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <form method="post" (ngSubmit)="criar(content)" [formGroup]="formulario">
+      <div class="form-group">
+        <label for="nometxt">Nome</label>
+        <input  type="text" class="form-control" id="nometxt" placeholder="Digite seu nome"
+        formControlName="nome">
+      </div>
+      <div class="form-group">
+        <label for="selectSexo">Sexo</label>
+        <select formControlName="sexo" class="form-control" id="selectSexo">
+          <option value=""></option>
+          <option value="Masculino">Masculino</option>
+          <option value="Feminino">Feminino</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="celtxt">Celular</label>
+        <input formControlName="celular" type="text" class="form-control" id="celtxt" placeholder="Ex.: (00) 0000-0000" mask='(00)00000-0000'>
+      </div>
+      <div class="form-group">
+        <label for="cpftxt">CPF</label>
+        <input formControlName="cpf" type="text" class="form-control" id="cpftxt" placeholder="Ex.: 000.000.000-0"  mask="000.000.000-00">
+      </div>
+      <div class="form-group">
+        <label for="dtNasctxt">Data de Nascimento</label>
+        <input formControlName="dtNasc" type="text" class="form-control date-mask" id="dtNasctxt" placeholder="Ex.: dd/mm/aaaa" mask="00/00/0000" >
+      </div>
+      <div class="form-group">
+        <label for="emailtxt">E-mail</label>
+        <input formControlName="email" type="email" class="form-control" id="emailtxt" placeholder="Ex.: email@email.com">
+      </div>
+
+      <div class="form-group">
+        <label for="endtxt">Endereço</label>
+        <input formControlName="endereco" type="text" class="form-control" id="endtxt" placeholder="Ex.: Rua ...">
+      </div>
+      <button [disabled]="formulario.invalid" type="submit" class="btn btn-primary"
+      >Salvar</button>
+    </form>
+  </div>
+</ng-template>

@@ -1,0 +1,10 @@
+nav{
+	background-color: #333;
+}
+h1{
+	margin-top: 50px;
+}
+
+.container table{
+	margin-top: 20px;
+}

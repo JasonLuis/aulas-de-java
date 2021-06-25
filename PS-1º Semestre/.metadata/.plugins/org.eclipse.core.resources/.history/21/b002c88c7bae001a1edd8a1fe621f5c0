@@ -1,0 +1,39 @@
+package br.com.fiap.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+import br.com.fiap.model.SegmentoModel;
+import br.com.fiap.repository.SegmentRepository;
+
+@Controller
+@RequestMapping("/segmento")
+public class SegmentoController {
+	
+	private static final String CHATBOT_FOLDER = "segment/";
+	
+	@Autowired
+	public SegmentRepository segmentoRepository;
+	
+	
+	@GetMapping("/form")
+	public String open(@RequestParam String page, 
+					   @RequestParam(required = false) Long id,
+					   @ModelAttribute("produtoModel") SegmentoModel segmentoModel, 
+					   Model model) {
+		
+		if("produto-editar".equals(page)) {
+			model.addAttribute("produtoModel", produtoRepository.findById(id).get());
+		}
+		
+		model.addAttribute("categorias", categoriaRepository.findAll());
+		model.addAttribute("marcas", marcaRepository.findAll());
+		
+		return PRODUTO_FOLDER + page;
+	}
+}

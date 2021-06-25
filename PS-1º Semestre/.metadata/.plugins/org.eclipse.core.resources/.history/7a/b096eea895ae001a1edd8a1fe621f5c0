@@ -1,0 +1,9 @@
+package br.com.fiap.repository;
+
+@Component
+public class TriggerClass {
+	
+	public TriggerClass() {
+		// TODO Auto-generated constructor stub
+	}
+}

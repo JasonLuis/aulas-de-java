@@ -1,0 +1,27 @@
+package br.com.fiap.repository;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import br.com.fiap.model.LivroModel;
+
+public class LivroRepository {
+	
+	private static  LivroRepository instance;
+	private static Map<Long, LivroModel> livros;
+	
+	public static LivroRepository getInstance() {
+		
+		if(instance == null) {
+			instance = new LivroRepository();
+		}
+		return instance;
+	
+	}
+	
+	private LivroRepository() {
+		livros = new HashMap<Long, LivroModel>();
+		livros.put(1L, new LivroModel(1L, "As Estrelas", nomeAutor, data, preco, genero, descrição))
+	}
+	
+}
